@@ -1,0 +1,165 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	
+		{
+			"path" : "pages/home/home"
+			 
+			
+		},
+	
+		{
+			"path" : "pages/shop/shop"
+			 
+			
+		},
+		{
+			"path" : "pages/xiaomei/xiaomei"
+			 
+			
+		},
+	
+		{
+			"path" : "pages/painting/painting"
+			
+		},
+		{
+			"path" : "components/banner/banner"
+			
+		},
+		{
+			"path" : "components/tittle"
+			
+		},
+		{
+			"path" : "pages/painting/painting",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/shop/shop",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/painting_info/painting_info",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		
+		{
+			"path" : "pages/openmap/openmap",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/painting_infor_infor2/painting_infor_infor2",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/login/login",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/artist/fridakahlo",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		}
+	
+],	
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom"
+	},
+	"uniIdRouter": {},
+	
+	//做tabbar的配置(项目下边菜单栏)
+	"tabBar": {
+		//默认字体颜色
+		//这个颜色是调图片下面的文本的颜色 
+		"color": "#9999", //grey 
+		
+		//选择字体颜色
+		"selectedColor": "#765B48",
+		
+		//设置tabbar 的 字体尺寸
+		"fontSize": "16px",
+		//tabbar的背景颜色
+		//"backgroundColor": "#007aff",
+		//数组
+		"list": [
+			//list 数组中 每一个{} 就表示一个 菜单栏的配置
+			{
+				//菜单栏的文本
+				"text": "首页",
+				//页面的路径（每次我们点击首页就进这个页面）
+				"pagePath": "pages/home/home",
+				//末选中的图标路径（默认图标）
+				"iconPath": "/static/img/icon/home .png",
+				//选中的图片路径
+				"selectedIconPath": "/static/img/icon/home_1 .png"
+				
+				
+			},
+			
+			{
+				//菜单栏的文本
+				"text": "Painting",
+				//页面的路径（每次我们点击首页就进这个页面）
+				"pagePath": "pages/shop/shop",
+				//末选中的图标路径（默认图标）
+				"iconPath": "/static/img/icon/art.png",
+				//选中的图片路径
+				"selectedIconPath": "/static/img/icon/art (1).png"
+				
+				
+			},
+			
+			{
+				//菜单栏的文本
+				"text": "Shop",
+				//页面的路径（每次我们点击首页就进这个页面）
+				"pagePath": "pages/painting/painting",
+				//末选中的图标路径（默认图标）
+				"iconPath": "/static/img/icon/shopping.png",
+				//选中的图片路径
+				"selectedIconPath": "/static/img/icon/shopping (1).png"
+				
+				
+			},
+			
+			{
+				//菜单栏的文本
+				//小妹是客服
+				"text": "小妹",
+				//页面的路径（每次我们点击首页就进这个页面）
+				"pagePath": "pages/xiaomei/xiaomei",
+				//末选中的图标路径（默认图标）
+				"iconPath": "/static/img/icon/xiaomei.png",
+				//选中的图片路径
+				"selectedIconPath": "/static/img/icon/xiaomei(1).png"
+				
+				
+			}
+		]
+	}
+	
+}
