@@ -6,12 +6,22 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "node server.js",
+    "start": "node server.js"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.39.0"
+    "@supabase/supabase-js": "^2.39.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "google-tts-api": "^2.0.2",
+    "@aws-sdk/client-polly": "^3.0.0",
+    "express-rate-limit": "^6.8.0",
+    "helmet": "^7.0.0"
   },
   "devDependencies": {
+    "supabase": "^2.65.5",
     "vite": "^5.0.0"
   }
 }

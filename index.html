@@ -36,6 +36,28 @@
           <div class="voice-info" id="voiceInfo"></div>
         </div>
 
+
+
+        <div class="control-group">
+          <label for="languageSelect" class="label">Language / Locale</label>
+          <select id="languageSelect" class="select-input">
+            <option value="en-US">English (US)</option>
+            <option value="en-GB">English (UK)</option>
+            <option value="es-ES">Spanish (Spain)</option>
+            <option value="fr-FR">French (France)</option>
+            <option value="de-DE">German (Germany)</option>
+            <option value="it-IT">Italian (Italy)</option>
+            <option value="pt-BR">Portuguese (Brazil)</option>
+            <option value="ja-JP">Japanese (Japan)</option>
+            <option value="ko-KR">Korean (Korea)</option>
+            <option value="zh-CN">Chinese (Mandarin)</option>
+            <option value="ru-RU">Russian (Russia)</option>
+            <option value="ar-SA">Arabic (Saudi Arabia)</option>
+            <option value="hi-IN">Hindi (India)</option>
+          </select>
+          <p class="small">Select the language/locale for the generated speech. Voices will be filtered based on the selected language.</p>
+        </div>
+
         <div class="control-row">
           <div class="control-group">
             <label for="speedControl" class="label">
@@ -99,6 +121,7 @@
             />
           </div>
         </div>
+        <!-- Recording option removed. Downloads are available when server returns audio blob (NaturalReaders or other server-side TTS). -->
       </div>
 
       <div class="button-section">
@@ -110,13 +133,20 @@
           <span class="btn-icon">⬇️</span>
           Download MP3
         </button>
+        <div id="debugSentLang" class="debug-lang" aria-live="polite" style="margin-top:8px;font-size:0.9rem;color:#666">Sent: —</div>
       </div>
 
       <div id="statusMessage" class="status-message"></div>
 
       <div id="audioPlayerSection" class="audio-player-section" style="display: none;">
         <h3 class="section-title">Preview Your Audio</h3>
-        <audio id="audioPlayer" controls class="audio-player"></audio>
+        <div class="mini-player">
+          <button id="playPauseBtn" class="mini-play" aria-label="Play">►</button>
+          <input id="progressBar" type="range" min="0" max="100" value="0" class="mini-progress" aria-label="Progress" />
+          <button id="muteBtn" class="mini-mute" aria-label="Mute">🔊</button>
+        </div>
+        <!-- Hidden audio element used for playback when server returns blob -->
+        <audio id="audioPlayer" preload="auto" style="display:none"></audio>
       </div>
 
       <div id="historySection" class="history-section">
